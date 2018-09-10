@@ -19,14 +19,14 @@ API
 
 The web server accepts the following HTTP requests:
 * `GET` request to `/`: Responds with a `Hello from Arduino Server` message.
-* `GET` request to `/strip/status`: Responds with an `ON` or `OFF` message for the on/off state of the strip.
-* `GET` request to `/strip/modes`: Responds with a comma separated list of the available modes.
-* `GET` request to `/strip/mode`: Responds with the name of the active mode.
-* `GET` request to `/strip/color`: Responds with a JSON representation of the color of the strip, e.g. `{"r":92,"g":34,"b":127}`.
-* `PUT` request to `/strip/status/on`: Turns the strip on.
-* `PUT` request to `/strip/status/off`: Turns the strip off.
-* `PUT` request to `/strip/mode`: Updates the mode. The required data are the name of the mode and, if applicable, a time period in ms, e.g. `SCANNER 100`.
-* `PUT` request to `/strip/color`: Updates the color of the strip. The data must be formatted as a JSON object, e.g. `{"r":48,"g":254,"b":176}`.
+* `GET` request to `/strip/status/`: Responds with an `ON` or `OFF` message for the on/off state of the strip.
+* `GET` request to `/strip/modes/`: Responds with a comma separated list of the available modes.
+* `GET` request to `/strip/mode/`: Responds with the name of the active mode.
+* `GET` request to `/strip/color/`: Responds with a JSON representation of the color of the strip, e.g. `{"r":92,"g":34,"b":127}`.
+* `PUT` request to `/strip/status/on/`: Turns the strip on.
+* `PUT` request to `/strip/status/off/`: Turns the strip off.
+* `PUT` request to `/strip/mode/`: Updates the mode. The required data are the name of the mode and, if applicable, a time period in ms, e.g. `SCANNER 100`.
+* `PUT` request to `/strip/color/`: Updates the color of the strip. The data must be formatted as a JSON object, e.g. `{"r":48,"g":254,"b":176}`.
 
 LED Strips
 ==========
